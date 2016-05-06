@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Учебное пособие по дисциплине Операционные Среды</title>
+  <%= stylesheet_link_tag    "application", media: "all",
+  "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application",
+   "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>'>
+<div id="banner">
+		<a href="/"><%= image_tag("logo.jpg") %></a>
+		<%= @page_title || "Учебное пособие" %>
+</div>
+<ul id="menu">
+        <li><a href="/">Home</a></li>
+        <li>
+                <a href="/tutorial/theory">Теория</a>
+                <ul>
+                        <li><a href="/theory/lesson1">Лекция №1</a></li>
+                        <li><a href="/theory/lesson2">Лекция №2</a></li>
+                        <li><a href="/theory/lesson3">Лекция №3</a></li>
+                </ul>
+        </li>
+        <li>
+                <a href="/tutorial/laboratory_work">Лаб. работы</a>
+                <ul>
+                        <li><a href="/theory/lesson1">Лабораторная работа №1</a></li>
+                        <li><a href="/theory/lesson2">Лабораторная работа №2</a></li>
+                        <li><a href="/theory/lesson3">Лабораторная работа №3</a></li>
+                        <li><a href="#">Лабораторная работа №4</a></li>
+                        <li><a href="#">Лабораторная работа №5</a></li>
+                </ul>
+        </li>
+        <li>
+                <a href="/tutorial/about">About</a>
+                
+        </li>
+</ul>
+<%= yield %>
+
+</body>
+</html>

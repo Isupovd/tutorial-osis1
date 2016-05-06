@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+#banner {
+	background: #2F4F4F;
+	padding: 10px;
+	border-bottom: 1px solid;
+	font: small-caps 30px/30px "Times New Roman", serif;
+	color: white;
+	text-align: center;
+	
+	img {
+		float: left;
+		width: 60px;
+		height: 35px;
+		
+	}
+}
+
+#menu, #menu li, #menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu, #menu ul {
+	background: #2F4F4F;
+}
+
+#menu {
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+#menu ul {
+	position: absolute;
+	z-index: 5;
+	display: none;
+}
+
+#menu li:hover ul {
+	display: block;
+}
+
+#menu li {
+	display: table-cell;
+	text-align: center;
+}
+
+
+#menu ul li {
+	display: block;
+	text-align: left;
+}
+#menu a {
+	display: block;
+	padding: 3px 0;
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu ul a {
+	padding: 3px 75px;
+}
+
+#menu li:hover {
+	background: #5F9EA0;
+}
+p {
+    text-indent: 30px;
+   }
+
+body {
+	background-image: url(fon1.jpg);
+	background-repeat: repeat;
+	color: white;
+}
